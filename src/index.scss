@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'press_startregular';
+  src: url('assets/fonts/prstart-webfont.woff2') format('woff2'),
+       url('assets/fonts/prstart-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Krona One', sans-serif;
+  font-family: 'press_startregular';
+  font-size: 1.6rem;
+  background: linear-gradient(to bottom right, orange, red);
+}

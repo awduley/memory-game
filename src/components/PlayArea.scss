@@ -1,0 +1,13 @@
+$black: #000;
+
+.play-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  background: rgba($black, .8);
+  padding: 1rem;
+  border-radius: 3px;
+}

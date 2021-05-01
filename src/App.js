@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import PlayArea from './components/PlayArea';
+
+const cardIds = []
 
 function App() {
+
+  const [ amountOfCards, setAmountOfCards ] = useState(6);
+
+  for(let i = 0; i < amountOfCards / 2; i ++) {
+    cardIds.push(i);
+    cardIds.push(i);
+  }
+  console.log(cardIds)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <PlayArea cardArray={cardIds} />
     </div>
   );
 }

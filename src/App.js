@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './App.scss';
+
 import PlayArea from './components/PlayArea';
+import Header from './components/Header';
 
 const cardIds = []
 
 function App() {
 
-  const [ amountOfCards, setAmountOfCards ] = useState(6);
+  const [ amountOfCards, setAmountOfCards ] = useState(12);
 
   for(let i = 0; i < amountOfCards / 2; i ++) {
     cardIds.push(i);
@@ -16,6 +18,7 @@ function App() {
 
   return (
     <div className='app'>
+      <Header />
       <PlayArea cardArray={cardIds} />
     </div>
   );

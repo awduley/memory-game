@@ -21,9 +21,9 @@ html {
 }
 
 body {
-  font-family: 'Krona One', sans-serif;
   font-family: 'press_startregular';
   font-size: 1.6rem;
   background: url('./assets/img/space-background.jpg') no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
 }

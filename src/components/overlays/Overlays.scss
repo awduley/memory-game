@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, .8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 3s ease;
+  transform: scale(0);
+
+  & > * {
+    margin: 2rem;
+  }
+}
+
+.overlay-start__welcome {
+  font-size: 5rem;
+}
+
+.overlay-start__press-start {
+  font-size: 2.6rem;
+}
+
+.btn {
+  width: auto;
+  padding: .4rem .8rem;
+  border-radius: .5rem;
+  color: #000;
+  font-family: 'Krona One', sans-serif;
+  font-size: 2.2rem;
+  transition: all .3s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 0 8px 1px #000;
+
+  &:hover {
+    background: darken(#fff, 40);
+  }
+}
+
+.overlay-start {
+  transition: all 3s ease;
+  color: rgb(0, 102, 255);
+  transform: scale(1);
+}

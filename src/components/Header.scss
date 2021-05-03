@@ -1,10 +1,18 @@
 .header {
   display: block;
-  margin: 1rem 0 3.4rem;
+  margin-top: 1rem;
   color: rgb(0, 102, 255);
   text-align: center;
 
   &__main-heading {
     margin: 0 auto;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: rgb(99, 161, 253);
   }
 }
